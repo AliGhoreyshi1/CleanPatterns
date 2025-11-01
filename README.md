@@ -15,24 +15,6 @@ This project is intentionally designed **without any database** — all data is 
 
 ---
 
-## 🧱 Project Structure  
-CleanPatterns/
-├── Repositories/
-│ ├── IRepository.cs # Generic repository interface
-│ ├── BaseRepository.cs # Abstract base class (Template Method Pattern)
-│ ├── UserRepository.cs # Example concrete repository
-│
-├── UnitOfWork/
-│ ├── IUnitOfWork.cs # Interface definition
-│ ├── UnitOfWork.cs # Manages multiple repositories together
-│
-├── Models/
-│ ├── User.cs # Example entity
-│
-└── Program.cs # Entry point demonstrating the usage
-
----
-
 ## ⚙️ Design Patterns in Action  
 
 ### 🧩 Repository Pattern  
@@ -78,6 +60,3 @@ It can serve as a teaching resource or a foundation for introducing clean archit
 
 Ali Ghoreyshi
 💼 www.linkedin.com/in/ali-ghoreyshi-3a899a186
-
-yaml
-Copy code
