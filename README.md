@@ -44,12 +44,13 @@ Coordinates multiple repositories and ensures that operations performed across t
 1. Clone the repository:
    ```bash
    git clone https://github.com/AliGhoreyshi1/CleanPatterns.git
-Open the solution in Visual Studio or VS Code.
+2. Open the solution in Visual Studio or VS Code.
 
-Set the startup project to the Console App.
+3. Set the startup project to the Console App.
 
-Run the project:
-dotnet run
+4. Run the project:
+   ```bash
+   dotnet run
 
 ## 🧠 Educational Purpose
 
