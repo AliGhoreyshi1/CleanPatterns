@@ -16,4 +16,68 @@ This project is intentionally designed **without any database** — all data is 
 ---
 
 ## 🧱 Project Structure  
+CleanPatterns/
+├── Repositories/
+│ ├── IRepository.cs # Generic repository interface
+│ ├── BaseRepository.cs # Abstract base class (Template Method Pattern)
+│ ├── UserRepository.cs # Example concrete repository
+│
+├── UnitOfWork/
+│ ├── IUnitOfWork.cs # Interface definition
+│ ├── UnitOfWork.cs # Manages multiple repositories together
+│
+├── Models/
+│ ├── User.cs # Example entity
+│
+└── Program.cs # Entry point demonstrating the usage
 
+---
+
+## ⚙️ Design Patterns in Action  
+
+### 🧩 Repository Pattern  
+Defines a **clean abstraction** between business logic and data access.  
+Each repository provides CRUD operations (`Add`, `GetAll`, `GetById`, `Update`, `Delete`) for its entity type.
+
+### 🧱 Template Method Pattern  
+Implemented through the `BaseRepository<T>` abstract class, which defines the **skeleton** of CRUD operations while allowing derived repositories to override specific behaviors.
+
+### 🔄 Unit of Work Pattern  
+Coordinates multiple repositories and ensures that operations performed across them are treated as **a single logical unit** — even though this demo doesn’t use a real database, it clearly illustrates the concept.
+
+---
+
+## 💡 Key Highlights  
+
+✅ Fully in-memory — no database setup required  
+✅ Clean and minimal C# implementation  
+✅ Well-documented and easy to understand  
+✅ Ideal for students, junior developers, and blog/article demos  
+✅ Ready to extend into EF Core or real data storage if needed  
+
+---
+
+## 🚀 How to Run  
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AliGhoreyshi1/CleanPatterns.git
+Open the solution in Visual Studio or VS Code.
+
+Set the startup project to the Console App.
+
+Run the project:
+dotnet run
+
+## 🧠 Educational Purpose
+
+This repository was designed to explain key design patterns in a simple, visual, and practical way.
+It can serve as a teaching resource or a foundation for introducing clean architecture principles.
+
+✍️ Author
+
+Ali Ghoreyshi
+💼 www.linkedin.com/in/ali-ghoreyshi-3a899a186
+
+yaml
+Copy code
